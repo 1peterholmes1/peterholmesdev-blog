@@ -93,7 +93,7 @@ const posts = (await getCollection('blog')).sort(
 					{
 						posts.map((post) => (
 							<li class="bg-gradient-to-tr from-blue-300 to-red-200 rounded-md">
-								<a href={`/${post.slug}/`} class="py-4 bg-white/40 backdrop-blur-sm rounded-md">
+								<a href={`/${post.slug}/`} class="py-4 bg-white/40 backdrop-blur-sm rounded-md px-4">
 {post.data.heroImage && <img width={720} height={360} src={post.data.heroImage} alt="" />}
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">
